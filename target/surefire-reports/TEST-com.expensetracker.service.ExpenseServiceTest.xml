@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.expensetracker.service.ExpenseServiceTest" time="0.107" tests="24" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="maven.user.extensions" value="C:\Users\ihave/.m2/extensions.xml"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\JM\exp-tracker\target\test-classes;D:\JM\exp-tracker\target\classes;C:\Users\ihave\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.2\junit-jupiter-engine-5.8.2.jar;C:\Users\ihave\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;C:\Users\ihave\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\ihave\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\ihave\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\ihave\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\ihave\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.8.2\junit-jupiter-params-5.8.2.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="maven.user.toolchains" value="C:\Users\ihave/.m2/toolchains.xml"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="maven.repo.central" value="https://repo.maven.apache.org/maven2"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="GB"/>
+    <property name="session.topDirectory" value="D:\JM\exp-tracker"/>
+    <property name="sun.boot.library.path" value="C:\Users\ihave\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.7.v20250502-0916\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\ihave\AppData\Local\Temp\surefire1890264667423818773\surefirebooter-20250628215604838_3.jar C:\Users\ihave\AppData\Local\Temp\surefire1890264667423818773 2025-06-28T21-55-43_876-jvmRun1 surefire-20250628215604838_1tmp surefire_0-20250628215604838_2tmp"/>
+    <property name="maven.project.settings" value="${session.rootDirectory}/.mvn/settings.xml"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\JM\exp-tracker\target\test-classes;D:\JM\exp-tracker\target\classes;C:\Users\ihave\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.2\junit-jupiter-engine-5.8.2.jar;C:\Users\ihave\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;C:\Users\ihave\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\ihave\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\ihave\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\ihave\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\ihave\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.8.2\junit-jupiter-params-5.8.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\ihave"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-04-15"/>
+    <property name="java.home" value="C:\Users\ihave\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.7.v20250502-0916\jre"/>
+    <property name="maven.user.conf" value="C:\Users\ihave/.m2"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\JM\exp-tracker"/>
+    <property name="style.color" value="always"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="maven.project.conf" value="${session.rootDirectory}/.mvn"/>
+    <property name="surefire.real.class.path" value="C:\Users\ihave\AppData\Local\Temp\surefire1890264667423818773\surefirebooter-20250628215604838_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.7+6-LTS"/>
+    <property name="user.name" value="ihave"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="maven.installation.conf" value="C:\maven-mvnd-2.0.0-rc-3-windows-amd64\mvn/conf"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="maven.installation.toolchains" value="C:\maven-mvnd-2.0.0-rc-3-windows-amd64\mvn/conf/toolchains.xml"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-21.0.7+6"/>
+    <property name="localRepository" value="C:\Users\ihave\.m2\repository"/>
+    <property name="maven.project.extensions" value="${session.rootDirectory}/.mvn/extensions.xml"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\ihave\AppData\Local\Temp\"/>
+    <property name="maven.installation.extensions" value="C:\maven-mvnd-2.0.0-rc-3-windows-amd64\mvn/conf/extensions.xml"/>
+    <property name="java.version" value="21.0.7"/>
+    <property name="user.dir" value="D:\JM\exp-tracker"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\ihave\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.7.v20250502-0916\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/ihave/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.7.v20250502-0916/jre/bin/server;C:/Users/ihave/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.7.v20250502-0916/jre/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;c:\Users\ihave\AppData\Local\Programs\cursor\resources\app\bin;C:\Program Files\NVIDIA\CUDNN\v9.4\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Users\ihave\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\ihave\AppData\Local\Programs\Python\Python312\;C:\Users\ihave\AppData\Local\Microsoft\WindowsApps;C:\msys64\ucrt64\bin;C:\Users\ihave\.dotnet\tools;c:\Users\ihave\AppData\Local\Programs\cursor\resources\app\bin;c:\Users\ihave\AppData\Local\Programs\cursor\resources\app\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;C:\Program Files\Cloudflare\Cloudflare WARP\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;c:\Users\ihave\AppData\Local\Programs\Trae\bin;C:\Users\ihave\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\ihave\AppData\Local\Programs\Python\Python312\;C:\Users\ihave\AppData\Local\Microsoft\WindowsApps;C:\Users\ihave\AppData\Local\Programs\Microsoft VS Code\bin;C:\msys64\ucrt64\bin;C:\Users\ihave\.dotnet\tools;C:\Users\ihave\AppData\Local\Microsoft\WinGet\Packages\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\ihave\AppData\Local\spicetify;C:\Users\ihave\.dotnet\tools;C:\Users\ihave\AppData\Roaming\npm;C:\Users\ihave\AppData\Local\Programs\mongosh\;C:\WINDOWS\System32;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="21.0.7+6-LTS"/>
+    <property name="maven.installation.settings" value="C:\maven-mvnd-2.0.0-rc-3-windows-amd64\mvn/conf/settings.xml"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="maven.user.settings" value="C:\Users\ihave/.m2/settings.xml"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="testAddExpenseWithInvalidAmount" classname="com.expensetracker.service.ExpenseServiceTest" time="0.004"/>
+  <testcase name="testAddExpenseWithNullDate" classname="com.expensetracker.service.ExpenseServiceTest" time="0.002"/>
+  <testcase name="testGetExpenseCount" classname="com.expensetracker.service.ExpenseServiceTest" time="0.002"/>
+  <testcase name="testGetCategories" classname="com.expensetracker.service.ExpenseServiceTest" time="0.002"/>
+  <testcase name="testMultipleCategories(String)[1]" classname="com.expensetracker.service.ExpenseServiceTest" time="0.03"/>
+  <testcase name="testMultipleCategories(String)[2]" classname="com.expensetracker.service.ExpenseServiceTest" time="0"/>
+  <testcase name="testMultipleCategories(String)[3]" classname="com.expensetracker.service.ExpenseServiceTest" time="0.002"/>
+  <testcase name="testMultipleCategories(String)[4]" classname="com.expensetracker.service.ExpenseServiceTest" time="0.001"/>
+  <testcase name="testMultipleCategories(String)[5]" classname="com.expensetracker.service.ExpenseServiceTest" time="0.001"/>
+  <testcase name="testClearAllExpenses" classname="com.expensetracker.service.ExpenseServiceTest" time="0.001"/>
+  <testcase name="testGetExpensesByDateRange" classname="com.expensetracker.service.ExpenseServiceTest" time="0.001"/>
+  <testcase name="testGetExpensesByCategory" classname="com.expensetracker.service.ExpenseServiceTest" time="0.001"/>
+  <testcase name="testTrimWhitespaceInInputs" classname="com.expensetracker.service.ExpenseServiceTest" time="0.001"/>
+  <testcase name="testAddExpense" classname="com.expensetracker.service.ExpenseServiceTest" time="0.001"/>
+  <testcase name="testRemoveNonExistentExpense" classname="com.expensetracker.service.ExpenseServiceTest" time="0.001"/>
+  <testcase name="testGetTotalByCategory" classname="com.expensetracker.service.ExpenseServiceTest" time="0.001"/>
+  <testcase name="testGetTotalExpenses" classname="com.expensetracker.service.ExpenseServiceTest" time="0"/>
+  <testcase name="testAddExpenseWithInvalidDescription" classname="com.expensetracker.service.ExpenseServiceTest" time="0.001"/>
+  <testcase name="testComplexScenario" classname="com.expensetracker.service.ExpenseServiceTest" time="0.002"/>
+  <testcase name="testGetAllExpenses" classname="com.expensetracker.service.ExpenseServiceTest" time="0"/>
+  <testcase name="testGetExpenseById" classname="com.expensetracker.service.ExpenseServiceTest" time="0.001"/>
+  <testcase name="testAddExpenseWithDate" classname="com.expensetracker.service.ExpenseServiceTest" time="0.001"/>
+  <testcase name="testRemoveExpense" classname="com.expensetracker.service.ExpenseServiceTest" time="0.002"/>
+  <testcase name="testAddExpenseWithInvalidCategory" classname="com.expensetracker.service.ExpenseServiceTest" time="0.001"/>
+</testsuite>
