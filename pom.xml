@@ -40,6 +40,11 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>io.dropwizard.metrics</groupId>
+            <artifactId>metrics-graphite</artifactId>
+            <version>4.1.18</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -71,6 +76,23 @@
                     <mainClass>com.expensetracker.ExpenseTrackerApp</mainClass>
                 </configuration>
             </plugin>
+
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>3.2.4</version>
+                <executions>
+                    <execution>
+                    <phase>package</phase>
+                    <goals><goal>shade</goal></goals>
+                    <configuration>
+                        <finalName>expense-tracker-1.0</finalName>
+                    </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
 
             <!-- Maven Shade Plugin for creating executable JAR -->
             <plugin>

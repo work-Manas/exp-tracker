@@ -2,12 +2,18 @@ package com.expensetracker;
 
 import com.expensetracker.model.Expense;
 import com.expensetracker.service.ExpenseService;
+
+import com.codahale.metrics.*;
+import com.codahale.metrics.graphite.*;
+
+import java.net.InetSocketAddress;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 import java.util.List;
 import java.util.Scanner;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Main application class for the Expense Tracker.
@@ -17,7 +23,23 @@ public class ExpenseTrackerApp {
     private static final Scanner scanner = new Scanner(System.in);
     private static final DateTimeFormatter DATE_FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
+    // Metrics setup
+    private static final MetricRegistry metrics = new MetricRegistry();
+
+    private static final Timer addExpenseTimer = metrics.timer("add-expense.duration");
+    private static final Meter addExpenseErrors = metrics.meter("add-expense.errors");
+
+    private static final Meter viewAllExpensesMeter = metrics.meter("view-all-expenses.count");
+    private static final Meter deleteExpenseMeter = metrics.meter("delete-expense.count");
+
     public static void main(String[] args) {
+        // Set up Graphite reporter
+        Graphite graphite = new Graphite(new InetSocketAddress("localhost", 2003));
+        GraphiteReporter reporter = GraphiteReporter.forRegistry(metrics)
+                .prefixedWith("expense-tracker")
+                .build(graphite);
+        reporter.start(1, TimeUnit.MINUTES);
+
         System.out.println("=== Welcome to Expense Tracker ===");
         System.out.println();
 
@@ -79,6 +101,7 @@ public class ExpenseTrackerApp {
 
     private static void addExpense() {
         System.out.println("\n--- Add New Expense ---");
+        final Timer.Context context = addExpenseTimer.time();
 
         try {
             System.out.print("Enter description: ");
@@ -103,15 +126,22 @@ public class ExpenseTrackerApp {
             System.out.println("✓ Expense added successfully!");
 
         } catch (NumberFormatException e) {
+            addExpenseErrors.mark();
             System.out.println("✗ Invalid amount format. Please enter a valid number.");
         } catch (DateTimeParseException e) {
+            addExpenseErrors.mark();
             System.out.println("✗ Invalid date format. Please use yyyy-MM-dd format.");
         } catch (IllegalArgumentException e) {
+            addExpenseErrors.mark();
             System.out.println("✗ " + e.getMessage());
+        } finally {
+            context.stop();
         }
     }
 
     private static void viewAllExpenses() {
+        viewAllExpensesMeter.mark();
+
         System.out.println("\n--- All Expenses ---");
         List<Expense> expenses = expenseService.getAllExpenses();
 
@@ -147,6 +177,7 @@ public class ExpenseTrackerApp {
             int id = Integer.parseInt(scanner.nextLine().trim());
 
             if (expenseService.removeExpense(id)) {
+                deleteExpenseMeter.mark();
                 System.out.println("✓ Expense deleted successfully!");
             } else {
                 System.out.println("✗ Expense with ID " + id + " not found.");

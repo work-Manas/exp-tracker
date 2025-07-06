@@ -1,0 +1,22 @@
+- hosts: app
+  become: yes
+  tasks:
+    - name: Pull latest image
+      docker_image:
+        name: d3wqq/expense-tracker
+        source: pull
+
+    - name: Stop old container
+      docker_container:
+        name: expense-tracker
+        state: absent
+        force_kill: true
+
+    - name: Run CLI app interactively (simulated)
+      docker_container:
+        name: expense-tracker
+        image: d3wqq/expense-tracker
+        interactive: yes
+        tty: yes
+        detach: no
+        command: [" java -jar app.jar"]

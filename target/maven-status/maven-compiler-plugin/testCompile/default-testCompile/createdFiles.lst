@@ -1,2 +1,2 @@
-com\expensetracker\model\ExpenseTest.class
-com\expensetracker\service\ExpenseServiceTest.class
+com/expensetracker/service/ExpenseServiceTest.class
+com/expensetracker/model/ExpenseTest.class
