@@ -34,7 +34,7 @@ public class ExpenseTrackerApp {
 
     public static void main(String[] args) {
         // Set up Graphite reporter
-        Graphite graphite = new Graphite(new InetSocketAddress("localhost", 2003));
+        Graphite graphite = new Graphite(new InetSocketAddress("172.17.0.1", 2003));
         GraphiteReporter reporter = GraphiteReporter.forRegistry(metrics)
                 .prefixedWith("expense-tracker")
                 .build(graphite);
