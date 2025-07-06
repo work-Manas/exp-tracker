@@ -13,7 +13,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-21-openjdk/lib"/>
-    <property name="sun.java.command" value="/home/manas/exp-tracker/target/surefire/surefirebooter-20250706220306801_3.jar /home/manas/exp-tracker/target/surefire 2025-07-06T22-03-06_632-jvmRun1 surefire-20250706220306801_1tmp surefire_0-20250706220306801_2tmp"/>
+    <property name="sun.java.command" value="/home/manas/exp-tracker/target/surefire/surefirebooter-20250706235619408_3.jar /home/manas/exp-tracker/target/surefire 2025-07-06T23-56-19_265-jvmRun1 surefire-20250706235619408_1tmp surefire_0-20250706235619408_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/manas/exp-tracker/target/test-classes:/home/manas/exp-tracker/target/classes:/home/manas/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/home/manas/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/home/manas/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/manas/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/home/manas/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/manas/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/home/manas/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.2/junit-jupiter-params-5.8.2.jar:/home/manas/.m2/repository/io/dropwizard/metrics/metrics-graphite/4.1.18/metrics-graphite-4.1.18.jar:/home/manas/.m2/repository/io/dropwizard/metrics/metrics-core/4.1.18/metrics-core-4.1.18.jar:/home/manas/.m2/repository/com/rabbitmq/amqp-client/5.11.0/amqp-client-5.11.0.jar:/home/manas/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -28,7 +28,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/home/manas/exp-tracker/target/surefire/surefirebooter-20250706220306801_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/manas/exp-tracker/target/surefire/surefirebooter-20250706235619408_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.7+6"/>
     <property name="user.name" value="manas"/>
@@ -55,11 +55,11 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testExpenseCreationWithCurrentDate" classname="com.expensetracker.model.ExpenseTest" time="0.027"/>
+  <testcase name="testExpenseCreationWithCurrentDate" classname="com.expensetracker.model.ExpenseTest" time="0.028"/>
   <testcase name="testExpenseHashCode" classname="com.expensetracker.model.ExpenseTest" time="0.001"/>
-  <testcase name="testUniqueIds" classname="com.expensetracker.model.ExpenseTest" time="0.001"/>
+  <testcase name="testUniqueIds" classname="com.expensetracker.model.ExpenseTest" time="0"/>
   <testcase name="testExpenseEquality" classname="com.expensetracker.model.ExpenseTest" time="0.001"/>
-  <testcase name="testExpenseSetters" classname="com.expensetracker.model.ExpenseTest" time="0"/>
-  <testcase name="testExpenseCreationWithSpecificDate" classname="com.expensetracker.model.ExpenseTest" time="0"/>
+  <testcase name="testExpenseSetters" classname="com.expensetracker.model.ExpenseTest" time="0.001"/>
+  <testcase name="testExpenseCreationWithSpecificDate" classname="com.expensetracker.model.ExpenseTest" time="0.001"/>
   <testcase name="testExpenseToString" classname="com.expensetracker.model.ExpenseTest" time="0.007"/>
 </testsuite>
