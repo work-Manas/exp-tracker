@@ -132,13 +132,3 @@ Food
 - Add Prometheus + Alertmanager integration
 
 ---
-
-## 🤝 Contributors
-
-- **Manas Awasthi** — Developer & DevOps Engineer
-
----
-
-## 📜 License
-
-This project is licensed under the MIT License.
